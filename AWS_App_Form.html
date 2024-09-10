@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人デザイン</title>
+
+    <style type="text/css">
+        /*
+        リセット系
+        */
+        html {
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+            /* Prevent adjustments of font size after orientation changes in iOS */
+            word-break: normal;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-size: 18px;
+        }
+
+        *,
+        ::before,
+        ::after {
+            background-repeat: no-repeat;
+            /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+            box-sizing: inherit;
+        }
+
+        ::before,
+        ::after {
+            text-decoration: inherit;
+            /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+            vertical-align: inherit;
+        }
+
+        * {
+            padding: 0;
+            /* Reset `padding` and `margin` of all elements */
+            margin: 0;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+            /* Add the correct font weight in Chrome, Edge, and Safari */
+        }
+
+        img {
+            border-style: none;
+            /* Remove border when inside `a` element in IE 8/9/10 */
+        }
+
+        hr {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+
+        /* 画像の設定 */
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .rogo {
+            display: block;
+            margin: auto;
+            width: 160px;
+        }
+
+        .eyecatch {
+            background: linear-gradient(to right, #f9cd42, #f9a342);
+            padding: 1rem;
+        }
+
+        /* fontの指定 */
+        * {
+            font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", sans-serif;
+        }
+
+        /*  bodyの設定　*/
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 区切り線 */
+        hr {
+            border-top: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+
+        /* 行間 */
+        h1,
+        p {
+
+            margin: 0 0 1rem 0;
+        }
+
+        /* 余白等 */
+        .container {
+            max-width: 600px;
+            margin: 2%;
+            padding: 1%;
+        }
+
+        /* 装飾関係
+            デザインを変更したい場合に使用する
+         */
+
+        /* 背景色 */
+        body {
+            background-color: rgb(41, 39, 41);
+        }
+
+        .container {
+            background-color: #FFF;
+        }
+
+        /* 見出し */
+        .headline-01 {
+            position: relative;
+            padding: 0.2em 0.5em;
+            background: -webkit-linear-gradient(to right, rgb(0, 0, 0), #9cb0a3), #ffc994);
+            background: linear-gradient(to right, #738899, #203344);
+            color: white;
+            font-weight: lighter;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+        }
+
+        /* 黄色蛍光ペン */
+        .span-01 {
+            font-weight: bold;
+            background: linear-gradient(transparent 60%, #ffff66 60%);
+        }
+
+        /* 青文字強調 */
+        .span-02 {
+            font-weight: bold;
+            color: blue;
+            font-size: 120%;
+        }
+
+        /* ボタンの設定 */
+        .button-01 a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 1em 2em;
+            max-width: 75%;
+            color: #fff;
+            font-size: 170%;
+            font-weight: 700;
+            background-image: linear-gradient(333deg,#ff8d19, #d5b60a);
+            border-radius: 50vh;
+            text-decoration-line: unset;
+            white-space: nowrap;
+            transition: transform 1s;
+        }
+
+        .button-01 a:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* レイアウト操作 */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        p {
+            padding-left: 1em;
+            /* インデント */
+        }
+
+        h2 {
+            font-weight: bold;
+            /* 太文字 */
+        }
+
+
+        /*
+fontのサイズ指定
+ */
+
+        html {
+            font-size: 62.5%;
+            /* 10px 相当に指定（10px ÷ 16px = 62.5%）。 */
+        }
+
+
+        h1 {
+            font-size: 2em;
+            /* 20px 相当の文字サイズを指定。 */
+        }
+
+
+        h2 {
+            font-size: 1.7em;
+            /* 17px 相当の文字サイズを指定。 */
+        }
+
+        h3 {
+            font-size: 1.5em;
+            /* 15px 相当の文字サイズを指定。 */
+        }
+
+        p {
+            font-size: 1.4em;
+            /* 14px 相当の文字サイズを指定。 */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- アイキャッチの画像 -->
+        <img class="eyecatch" alt="AWSのロゴ画像"
+            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200706231831/AWS-2.png">
+
+        <!-- タイトル -->
+        <h1 class="headline-01">初学者向けAWS講習</h1>
+
+        <!-- 本文 -->
+        <p>お疲れ様です。<br />
+            オールスターグループ教育担当から講習会のお知らせです。</p>
+
+        <p>今回は、【初学者向けAWS講習会】を実施いたします。</p>
+
+        <p> <span class="span-01">「今流行ってるけどクラウドサービスっていまいちわからない」<br />
+                「インフラ志望だけどどの方向へ進んだらいいかわからない」<br />
+                「LPIC Lv1は取得したけど難しくてその先へなかなか進めない」</span></p>
+
+        <p>そんな人は是非参加していただき、キャリアの選択肢を広げていただければ幸いです。</p>
+
+        <p>初学者向けに、実際にAWS環境を触りながらの解説を行いますので、<br />
+            参加者にはメールにてこちらで作成したAWSアカウントを送付いたします。</p>
+
+        <hr>
+        <h2>＜開催日＞</h2>
+        <p>
+            &#11045;2024年10月18日(金) 20:00-21:30<br />
+            ※進行状況により前後します。</p>
+        <hr>
+        <h2>＜会場＞</h2>
+        <p>
+            日本橋オフィス<br />
+            （〒103-0023 東京都中央区日本橋本町4-22-8 日本橋本町デザインビル18F）<br />
+        </p>
+        <h2>＜講習担当＞</h2>
+        <p>
+            &#11045;IT事業部 4課 課長<br />
+            <span class="span-02">苗字 名前</span>
+        </p>
+        <h2>＜持参物＞</h2>
+        <p>
+            &#8226;自身のノートPC<br />
+            ※お持ちでない方は貸出しますが数に限りがあります。<br />
+            &#8226;送付された各自のAWSアカウント
+        </p>
+        <h2>＜備考＞</h2>
+        <p>
+            交通費全額支給<br />
+        </p>
+        <hr>
+        <p>なお、ご応募される方は、<br />
+            <strong>10月17日(木)までに</strong>下記申請フォームから必要事項を入力してください。
+        </p>
+
+        <div class="text-center">
+            <p>＜講習会の応募はこちらから＞</p>
+        </div>
+
+        <!-- ボタンです、文章とURLは適時編集してください。 -->
+        <p class="button-01">
+            <a
+                href="https://www.google.com">
+                講習会へ<br /><span>参加する！</span>
+            </a>
+        </p>
+        <hr>
+        <p>ご不明な点等がございましたら<br />
+            以下のフォームからお問い合わせください。</p>
+
+        <p>お問合フォーム<br />
+            <a href="example@gmail.com">example@gmail.com</a>
+        </p>
+
+        <p>以上となります。<br />
+            みなさんとお会いできることを楽しみにしております。 </p>
+        <hr>
+        <!-- 署名 
+        記事内に署名を入れない場合は空白で問題ありません。
+        -->
+        <!-- ロゴの画像 -->
+        <img class="rogo" alt="オールスターグループのロゴ" src="https://assets.aboutamazon.com/dims4/default/f6a5f38/2147483647/strip/true/crop/2000x1126+0+437/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fc1%2F9e%2F294eb6684114ae920d30c426c786%2Faws-logo-rgb.png">
+    </div>
+</body>
+
+</html>
