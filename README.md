@@ -12,6 +12,7 @@ Lightweight, **no build process**, and **no dependencies**.
 2. Open `index.html` in your browser
 
 ### Option 2 — Local server (recommended for development)
+
 ```bash
 # Install a simple HTTP server (one-time)
 npm i -g http-server
